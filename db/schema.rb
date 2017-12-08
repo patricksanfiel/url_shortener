@@ -10,13 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171205183552) do
+ActiveRecord::Schema.define(version: 20171208004541) do
 
   create_table "longlinks", force: :cascade do |t|
     t.string "url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "shortlink"
   end
 
 end

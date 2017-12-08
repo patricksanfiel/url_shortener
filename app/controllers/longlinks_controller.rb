@@ -18,7 +18,6 @@ class LonglinksController < ApplicationController
 
   def create
     @longlink=Longlink.new(longlink_params)
-    @longlink.shortlink=@longlink.url
 
     respond_to do |format|
       if @longlink.save
