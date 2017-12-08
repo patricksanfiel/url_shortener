@@ -1,0 +1,2 @@
+module LonglinksHelper
+end

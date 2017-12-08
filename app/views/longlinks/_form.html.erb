@@ -1,0 +1,17 @@
+<h1></h1>
+<%= form_for(@longlink) do |form|%>
+  <% if @longlink.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@longlink.errors.count, "error") %> prohibited this link from being saved:</h2>
+
+        <ul>
+        <% @longlink.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+  <%= form.label :url %>
+  <%= form.text_field :url %>
+  <%= form.submit "Shorten your link" %>
+<% end %>
